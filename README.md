@@ -22,7 +22,7 @@ Ensure that you have flashed your Jetson to include the Tegra Multimedia API. Th
 cd /usr/src/jetson_multimedia_api
 make -j6
 cd ~
-sudo apt-get install cmake python-pip swig git
+sudo apt-get install cmake python3-pip swig git
 git clone https://github.com/Jerry-zirui/argus_camera_jetson_nx.git
 cd argus_camera
 mkdir build
@@ -31,12 +31,6 @@ cmake ..
 make -j4
 sudo make install
 cd ..
-sudo python setup.py install
-```
-
-If you are using Python 3 you replace the last command with
-
-```bash
 sudo python3 setup.py install
 ```
 
