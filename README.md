@@ -19,6 +19,8 @@ Setup
 Ensure that you have flashed your Jetson to include the Tegra Multimedia API. Then, simply clone this repository and enter the following into a terminal.
 
 ```bash
+cd /usr/src/jetson_multimedia_api
+make -j6
 sudo apt-get install cmake python-pip swig
 cd argus_camera
 mkdir build
